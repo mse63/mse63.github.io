@@ -1,0 +1,205 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\definecolor{header_color}{rgb}{0.22,0.45,0.70}% light blue
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubheadingTwo}[6]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+      \textit{\small#5} & \textit{\small #6} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+\begin{center}
+    \textbf{\Huge \scshape Mahmoud Elsharawy} \\ \vspace{1pt}
+    \href{mailto:moud.elsh@gmail.com}{\underline{moud.elsh@gmail.com}} $|$
+    \href{https://github.com/mse63}{\underline{https://github.com/mse63}} $|$
+    \href{https://mse63.github.io}{\underline{https://mse63.github.io}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheadingTwo
+      {Cornell University}{GPA: 3.78}
+      {Masters of Engineering in Computer Science}{May 2025}
+      {Bachelors of Science in Computer Science \& Electrical and Computer Engineering}{Dec 2024}
+  \resumeSubHeadingListEnd
+%   \medskip
+%   \textbf{Relevant Coursework}{: Compilers, Programming Languages, Computer Architecture, Parallel Architectures, Reinforcement Learning, Microcontrollers, Embedded Operating Systems}
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Apple}{July 2025 - Present}
+      {System Electrical Engineer}{Cupertino, CA}
+      \resumeItemListStart
+        \resumeItem{Integrated schematics for PCBA development, coordinating with Mechanical Engineers, Design for Manufacturing, and PCB Designers to create production-worthy PCBAs}
+        \resumeItem{Characterized and debugged hardware using oscilloscopes and signal analyzers to ensure reliability in production}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Apple}{May 2024 - Aug 2024}
+      {System Electrical Engineering Intern}{Cupertino, CA}
+      \resumeItemListStart
+        \resumeItem{Developed a Python tool to automate HSPICE simulations for existing Cadence designs and GPIO specifications}
+        \resumeItem{Designed a battery charging circuit and USB/SPI communication for a prototype}
+        \resumeItem{Created prototype analog and RF circuits for testing and future development}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Apple}{Jan 2023 - Aug 2023}
+      {System Electrical Engineering Intern}{Cupertino, CA}
+      \resumeItemListStart
+        \resumeItem{Designed and tested a buck converter power module for use on internal dev boards, removing reliance on a vendor's power modules, preventing future supply chain issues and reducing cost}
+        \resumeItem{Designed a PCBA to calibrate the ADC of a SAMD21 microcontroller, and programmed it using C to act as a micro-current load to precisely characterize power components}
+        \resumeItem{Created prototype analog and RF circuits for testing and future development}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {SpaceX}{Jan 2022 - Aug 2022}
+      {Hardware Engineering Intern}{Hawthorne, CA}
+      \resumeItemListStart
+        \resumeItem{Created a Python program to use SCPI commands and REST API interaction to collect and model hardware data}
+        \resumeItem{Automated an assembly line station through mechanical design and PLC TwinCAT software, tripling its speed}
+        \resumeItem{Tested and qualified alternative integrated circuits for Business User Terminals, preventing a parts shortage}
+        \resumeItem{Designed a dev PCBA to test various potential fixes for acoustic noise from user terminals}
+      \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+
+    \resumeProjectHeading
+          {\textbf{RP2040 Audio Communication} $|$ \emph{C++, Embedded Systems, Microcontrollers}}{Mar 2024 - April 2024}
+          \resumeItemListStart
+            \resumeItem{Developed a 2-way audio communication protocol on Raspberry Pi RP2040 boards using 8 frequency-based bit encoding, enabling UTF-8 data transmission via sound}
+            \resumeItem{Implemented synchronization logic to detect when the other board starts transmitting and adjust clocks accordingly, while using Direct Digital Synthesis (DDS) for precise audio signal generation}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Discord Hard Drive} $|$ \emph{C++, REST API, Linux, Git}}{Feb 2025 -- Mar 2025}
+          \resumeItemListStart
+            \resumeItem{Developed a Discord bot in C++ that interfaces with Discord's REST API to store arbitrary data through reading, writing, and modifying messages}
+            \resumeItem{Created an nbdkit plugin in C++ to integrate the bot with a virtual block device, enabling seamless read/write operations and allowing Discord messages to be used as a hard drive}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Chess AI} $|$ \emph{Rust, Python, REST API, Systemd, Git}}{Aug 2021 -- Present}
+          \resumeItemListStart
+            \resumeItem{Developed a UCI Chess AI in Rust using a minimax algorithm with move-ordering and variable depth control}
+            \resumeItem{Implemented Zobrist hashing with a hash-table to look up previously seen positions, reducing computation time}
+            \resumeItem{Hosted a systemd service to interact with lichess.com's REST API, allowing the AI to play against other bots and humans, earning an Elo rating of 1850, making it stronger than 85\% of human players on the website}
+          \resumeItemListEnd
+
+%       \resumeProjectHeading
+%           {\textbf{Automatic Plant Waterer} $|$ \emph{Arduino, C++, I2C, SPI}}{May 2020 -- Aug 2020}
+%           \resumeItemListStart
+%             \resumeItem{Designed, programmed and built an Arduino-controlled 3D-Printed automatic plant watering machine with C++, housing a mint plant and a water supply}
+%             \resumeItem{Implemented an Arduino to detect when the soil is too dry and use a peristaltic pump to water the plant when necessary}
+%           \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Rust, Java, Python, C/C++, ARM, RISC-V} \\
+     \textbf{Developer Tools}{: Linux, Nix, Git, Cargo, CMake} \\
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}

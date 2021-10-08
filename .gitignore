@@ -1,0 +1,6 @@
+shell.nix
+.envrc
+.direnv
+*.aux
+*.log
+*.out
