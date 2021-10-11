@@ -1,7 +1,7 @@
 ---
 title: Servo Controller
 layout: template
-filename: page_1_chess
+filename: page_2_servo
 --- 
 
 # Servo Controller
