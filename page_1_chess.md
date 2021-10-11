@@ -1,7 +1,7 @@
 ---
 title: Chess AI
 layout: template
-filename: chess
+filename: page_1_chess
 --- 
 
 # Chess AI
