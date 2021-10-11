@@ -7,7 +7,7 @@ filename: page_chess
 # Chess AI
 
 ## Example Game
-Below is an example game of my AI (White) vs 1400 Elo Stockfish (Black):
+Below is an example game of my AI (White) vs 1700 Elo Stockfish (Black):
 
 <iframe src="https://lichess.org/embed/RnfWEqsc?theme=auto&bg=auto"
 width=600 height=397 frameborder=0></iframe>
