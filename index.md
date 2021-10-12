@@ -3,6 +3,7 @@ title: Home
 layout: template
 filename: index
 order: 0
+show_tab: 0
 --- 
 
 # Big Header
