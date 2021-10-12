@@ -1,7 +1,7 @@
 ---
 title: Servo Controller
 layout: template
-filename: page_servo
+filename: servo
 order: 1
 show_tab: 1
 --- 
