@@ -2,6 +2,7 @@
 title: Servo Controller
 layout: template
 filename: page_servo
+order: 1
 --- 
 
 # Servo Controller
