@@ -2,6 +2,7 @@
 title: Welcome
 layout: template
 filename: index
+order: 0
 --- 
 
 # Big Header
