@@ -3,6 +3,7 @@ title: 3D Printed RC Hovercraft
 layout: template
 filename: page_hovercraft
 order: 3
+show_tab: 1
 --- 
 
 # 3D printed RC Hovercraft
