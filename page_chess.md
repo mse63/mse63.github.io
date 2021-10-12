@@ -3,6 +3,7 @@ title: Chess AI
 layout: template
 filename: page_chess
 order: 2
+show_tab: 1
 --- 
 
 # Chess AI
