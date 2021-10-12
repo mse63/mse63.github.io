@@ -12,7 +12,9 @@
       <h2 class="project-tagline"></h2>
       
       <a href="https://mse63.github.io/Mahmoud_Elsharawy_Resume.pdf" target="_blank" class="btn">View Resume</a>
-      {% for page in site.pages %}
+      
+      {% assign sorted_pages = site.pages | sort:"order" %}
+      {% for page in sorted_pages %}
         <a href= {{ page.filename }} class="btn">{{ page.title }}</a>
       {% endfor %}
     </section>
