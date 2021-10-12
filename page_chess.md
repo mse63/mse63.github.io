@@ -2,6 +2,7 @@
 title: Chess AI
 layout: template
 filename: page_chess
+order: 2
 --- 
 
 # Chess AI
