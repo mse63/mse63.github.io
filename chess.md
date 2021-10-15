@@ -19,4 +19,5 @@ Super cool description of my Chess AI algorithm and stuff.
 
 ## Future Development
 I plan on having the AI store its evaluation between moves. Currently the AI starts its evaluation from scratch on every move, but that's not necessary because it should have evaluated its current position on previous moves (albeit to a lower depth). Using that partial evaluation as a starting point could save a significant amount of time on each move, allowing further depth. It would also allow me to expand the definition of a "considerable" move, because the evaluations of those moves wouldn't be lost between turns.
+
 Additionally, I'd be interested in adding a transposition table, allowing the AI to recognize when the same position results from a different sequence of moves, potentially saving computation time, as it would not have to re-evaluate identical positions.
