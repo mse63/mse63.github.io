@@ -11,7 +11,7 @@ show_tab: 1
 ## Example Game
 Below is an example game of my AI (White) vs 2000 Elo Stockfish (Black):
 
-<iframe src="https://lichess.org/embed/BHLqEa1J#59?theme=auto&bg=auto"
+<iframe src="https://lichess.org/embed/BHLqEa1J#0?theme=auto&bg=auto"
 width=600 height=397 frameborder=0></iframe>
 
 ## Algorithm
