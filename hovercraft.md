@@ -14,3 +14,6 @@ Here is a video demo of the completed project:
 ## Design
 I will talk about super cool design stuff here.
 
+## Future Development
+This project is completed, so there is no future development.
+If I _were_ to revisit this project, I'd be interested in creating a hull that can be printed in one piece, rather than separate pieces that screw together. I'd also try more experimentation with hull shape. Particularly, I'd be interested in seeing whether any hull shape could result in behaviour which is stable enough to make a skirt unnecessary on level ground or still water.
