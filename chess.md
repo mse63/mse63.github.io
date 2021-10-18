@@ -42,6 +42,7 @@ To solve this issue, I took inspiration from Alan Turning's AI, [Turochamp](http
 
 I initially wanted to state that all captures are considerable, but that simply took too much time, espeically in midgame positions with lots of possible captures. As a compromise, my AI deems any move which captures the piece that it just moved as "considerable". This means it accurately calculates positions where lots of trades occur, even if they occur quite a few moves from now.
 
+### Summary
 To review, my AI first evaluates every position up to some depth (determined by the amount of time it has left). After that, it evaluates any "considerable moves" to make sure that the position isn't extremely volatile. After that, it looks at material difference and piece location to determine how good the position is. After all that calculation, the AI takes the move which allows it to force the opponent into the worst possible position.
 
 ## Future Development
