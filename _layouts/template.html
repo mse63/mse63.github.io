@@ -13,9 +13,7 @@
       </a>
       <h2 class="project-tagline"></h2>
       {% assign sorted_pages = site.pages | sort:"order" %} 
-      
-      <a href="https://mse63.github.io/Mahmoud_Elsharawy_Resume.pdf" target="_blank" class="btn">View Resume</a>
-      
+            
       {% for page in sorted_pages %}
         {% if page.show_tab == 1 %}
           <a href= {{ page.filename }} class="btn">{{ page.title }}</a>
