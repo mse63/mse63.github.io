@@ -6,7 +6,7 @@ order: 0
 show_tab: 0
 --- 
 
-<table>
+<table style="border:none">
 <tr>
     <td style="width:400px;align-items:start"><img src = "Mahmoud.jpg"></td>
     <td> <h2>About Me</h2>
