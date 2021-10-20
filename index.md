@@ -6,7 +6,7 @@ order: 0
 show_tab: 0
 --- 
 
-<img src = "Mahmoud.jpg" style="width:400px;float:left;margin-right:20px">
+<img src = "Mahmoud.jpg" style="width:300px;float:left;margin-right:20px">
 
 ## About Me
 
