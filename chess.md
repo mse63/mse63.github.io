@@ -28,20 +28,20 @@ If the position is a draw (stalemate or 3-fold-repition), my AI evalutes it as a
 If the position is a checkmate, my AI originally returned the minimum possible value it can. This led to two issues:
 
 1. The AI would not "stall" and continue playing in forced mating positions. It didn't see losing in 1 move as worse than a guaranteed loss in 10 moves.
-2. More importantly, the AI would not checkmate the opponent if it knew it could on a future turn. It didn't see any difference between winning immediately and winning 3 moves from now. This led to the awkward situation where the AI would stall forever and make nonsense moves when it had a mate-in-1, because it saw itself as winning anyway.
+2. More importantly, the AI would not checkmate the opponent if it knew it could on a future turn. It didn't see any difference between winning immediately and winning 3 moves into the future. This led to the awkward situation where the AI would stall forever and make nonsense moves when it had a mate-in-1, because it saw itself as winning anyway.
 
 To fix these issues, I added the length of the game to the smallest possible value for evaluating checkmates, so a checkmate further along the game is seen as better for the loser.
 
-However, we can't always evaluate all the way until we hit a checkmate or draw. Chess has more possible games than there are atoms in the universe so, unlike some games such as Tic-Tac-Toe, it is computationally impossible to calculate every potential future position with the algorithm described above. Therefore, after some finite depth, we need some method of scoring a board that does not rely on looking at future moves.
+However, we can't always evaluate all the way until we hit a checkmate or draw. Chess has more possible games than there are atoms in the universe so, unlike some games such as tic-tac-toe, it is computationally impossible to calculate every potential future position with the algorithm described above. Therefore, after some finite depth, we need some method of scoring a board that does not rely on looking at future moves.
 
 My AI mainly looks at material difference (using the standard 1,3,3,5,9 piece values), and has a small award if more of its pieces are towards the opposite side of the board. This reward exists to make the AI more aggressive and push pieces when possible.
 
 ### Considerable Moves
-Sometimes, we wish we could have evaluated to just one level deeper on one move. For example, we don't want the AI playing according to a position 4 moves from now when it could lose its Queen 5 moves from now.
+Sometimes, we wish we could have evaluated to just one level deeper on one move. For example, we don't want the AI playing according to a position four moves into the future, if that position would lose its Queen 5 moves into the future.
 
 To solve this issue, I took inspiration from Alan Turning's AI, [Turochamp](https://en.wikipedia.org/wiki/Turochamp) (yes, he designed a chess AI, despite there being no computer that could run it at his time). Turing foresaw the same issue, and his solution was to have his AI only look at a subset of moves after a certain depth. Of course, the AI must also consider a "null" move in this case, to represent any non-considerable move, because the player isn't forced to make a "considerable" move. I implemented the idea with my AI, testing what exactly should count in this subset, so that we have a good evaluation function while also not taking up too much time.
 
-I initially wanted to state that all captures are considerable, but that simply took too much time, especially in midgame positions with lots of possible captures. As a compromise, my AI deems any move which captures the piece that it just moved as "considerable". This means it accurately calculates positions where lots of trades occur, even if they occur quite a few moves from now.
+I initially wanted to state that all captures are considerable, but that simply took too much time, especially in midgame positions with lots of possible captures. As a compromise, my AI deems any move which captures the piece that it just moved as "considerable". This means it accurately calculates positions where lots of trades occur, even if they occur quite a few moves into the future.
 
 ### Summary
 To review, my AI first evaluates every position up to some depth (determined by the amount of time it has left). After that, it evaluates any "considerable moves" to make sure that the position isn't extremely volatile. After that, it looks at material difference and piece location to determine how good the position is. After all that calculation, the AI takes the move which allows it to force the opponent into the worst possible position.
