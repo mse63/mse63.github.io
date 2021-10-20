@@ -22,7 +22,7 @@ Servos take in a PWM signal, which modifies the pulse width of a square wave in 
 
 To convert this triangle wave into a PWM signal, I compared the triangle wave to a constant voltage with another op amp. Varying the constant voltage would vary the duty cycle of the outputted square wave, which allows it to be used as a PWM input for the servo.
 
-To determine exactly what the constant voltage should be, I used another op amp to compare the analog outputs from each servo, and put that through a low-pass filter, to prevent the signal from changing so rapidly, that the servo would not be able to keep up.
+To determine exactly what the constant voltage should be, I used another op amp to compare the analog outputs from each servo. I then put that through a low-pass filter, in order to prevent the signal from changing so rapidly that the servo would not be able to keep up.
 
 
 ## Future Development
