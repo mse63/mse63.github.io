@@ -6,7 +6,7 @@ order: 3
 show_tab: 1
 --- 
 
-# 3D printed RC Hovercraft
+# 3D Printed RC Hovercraft
 
 ## Demo Video
 Here is a video demo of the completed project:
