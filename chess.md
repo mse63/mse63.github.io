@@ -11,7 +11,7 @@ I created a Chess AI in Rust with no pre-made libraries. Because I am a better c
 See if you can beat it by challenging it on lichess: [melsh_bot](https://lichess.org/@/melsh_bot)
 
 ## Example Game
-Below is an example game of my AI vs Maia 1900, an AI designed to mimic a human 1900 Elo player.:
+Below is an example game of my AI vs Maia 1900 (an AI designed to mimic a human 1900 Elo player):
 
 <iframe src="https://lichess.org/embed/cq0cqA6sEGqF#0?theme=auto&bg=auto"
 width=600 height=397 frameborder=0></iframe>
