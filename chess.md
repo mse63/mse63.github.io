@@ -13,7 +13,7 @@ See if you can beat it by challenging it on lichess: [melsh_bot](https://lichess
 ## Example Game
 Below is an example game of my AI vs Maia 1900 (an AI designed to mimic a human 1900 Elo player):
 
-<iframe src="https://lichess.org/embed/cq0cqA6sEGqF#0?theme=auto&bg=auto"
+<iframe src="https://lichess.org/embed/game/hYYw800k?theme=auto&bg=auto#109"
 width=600 height=397 frameborder=0></iframe>
 
 ## Algorithm
