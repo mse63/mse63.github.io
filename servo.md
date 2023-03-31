@@ -2,7 +2,7 @@
 title: Servo Controller
 layout: template
 filename: servo
-order: 1
+order: 2
 show_tab: 1
 --- 
 
