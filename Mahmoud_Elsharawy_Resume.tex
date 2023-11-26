@@ -1,0 +1,117 @@
+\documentclass{article}
+\usepackage{calc}
+\usepackage[dvipsnames]{xcolor}
+\usepackage[margin=0.5in]{geometry}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{fontenc}
+\usepackage{ifthen}
+
+\setlist[enumerate]{topsep=0pt}
+\setlist[itemize]{noitemsep,topsep=0pt}
+\definecolor{header_color}{rgb}{0.22,0.45,0.70}% light blue
+\newlength{\remaining}
+\renewcommand{\section}[1]{
+  \vspace{1em}\setlength{\remaining}{\textwidth-\widthof{\fontsize{14}{15}\bfseries\uppercase{#1}}}\noindent\textcolor{header_color}{\underline{\fontsize{14}{20}\bfseries\uppercase{#1}\hspace*{\remaining}}}\\
+}
+
+\renewcommand{\subsection}[1]{
+  % \vspace{0.4em}
+  \noindent{\textcolor{header_color}{\fontsize{12}{15}\bfseries{#1}\dotfill}}\\
+}
+
+\renewcommand{\subsubsection}[3]{
+    \noindent\fontsize{12}{15}{\selectfont \textbf{#1} \ifthenelse{\equal{#2}{}}{}{| \emph{#2}} \hfill #3}
+}
+
+\newcommand{\eduitem}[3]{
+    \vspace{0.3cm}\\\noindent\fontsize{12}{15}{\selectfont\textbf{#1} \emph{#2} \hfill #3\\}
+}
+\pagenumbering{gobble}
+
+\begin{document}
+    \fontencoding{T1}
+    \fontfamily{lmr} %phv
+    \fontsize{11}{13} %9 15
+    \selectfont
+    \begin{center}
+        \begin{center}
+            \Huge\bfseries \textcolor{header_color}{Mahmoud Elsharawy}
+        \end{center}
+%            \begin{tabular}{c c c c c}
+        \begin{tabular}{c c c c c}
+                \href{https://mse63.github.io/}{https://mse63.github.io/} &
+                $\bullet$ &
+                \href{tel:Phone-Number}{(929)-461-9837}&
+                $\bullet$ &
+                \href{mailto:mse63@cornell.edu}{mse63@cornell.edu} \\
+        \end{tabular}
+    \end{center}
+    \vspace{-0.75em}
+    %----------------------------------------------------------------------------------------
+    %	EDUCATION SECTION
+    %----------------------------------------------------------------------------------------
+    \section{Education}
+    \vspace{-0.6cm}
+    \eduitem{Cornell University}{}{Expected 05/2025}
+    Master of Engineering in Electrical and Computer Engineering \hfill
+    \eduitem{Cornell University}{}{Expected 12/2024}
+    B.S. in Computer Science, B.S. in Electrical and Computer Engineering \hfill GPA: 3.80\\
+    \subsection{Relevant Coursework}
+    \begin{tabular}{l l l}
+       Operating Systems  & Analysis of Algorithms & Digital System Design Using Microcontrollers \\
+       Computer Architecture & Machine Learning & Foundations of Robotics \\
+    \end{tabular}\\
+
+    \subsection{Skills}
+    \textbf{Programming Languages: } Rust, Java, Bash, Python, C/C++\\
+    \textbf{Software: } Linux, LTspice, Cadence, KiCAD, Altium, Mentor Designer/Layout, Quartus\\
+    \textbf{Hardware: } Raspberry Pi, Arduino, FPGA Boards, Verilog
+
+    %----------------------------------------------------------------------------------------
+    %	EXPERIENCE SECTION
+    %----------------------------------------------------------------------------------------
+    \section{Experience}
+    \subsubsection{Apple}{System Electrical Engineering Intern}{Jan 2023 - Aug 2023}
+    \begin{itemize}
+        \item Designed and tested a buck converter power module for use on internal dev boards, removing reliance on a vendor's power modules, preventing future supply chain issues and reducing cost
+        \item Designed a PCBA to calibrate the ADC of a SAMD21 microcontroller, and programmed it using C++ to act as a micro-current load to precisely characterize power components
+        \item Created prototype analog and RF circuits for future development
+        \item Coordinated with a Product Design Engineer, DFM, and PCB Designer to design flexible PCBAs for prototypes
+    \end{itemize}
+
+    \subsubsection{SpaceX}{Hardware Engineering Intern}{Jan 2023 - Aug 2023}
+    \begin{itemize}
+        \item Anchored User Terminal Power Budget over temperature and operating mode by automating thermal chamber data collection through SCPI commands, informing thermal team of shortcomings and improving field predictions
+        \item Automated an assembly line station through mechanical design and PLC TwinCAT software, tripling its speed and preventing a production bottleneck
+        \item Tested and qualified alternative integrated circuits for Business User Terminals, preventing a parts shortage
+        \item Designed a dev PCBA to test various potential fixes for acoustic noise from user terminals
+    \end{itemize}
+
+    \subsubsection{Cornell University Unmanned Air Systems}{Electrical Team Member}{Aug 2022 - Dec 2022}
+    \begin{itemize}
+        \item Designed a PCB using an ESP32-S2 microcontroller programmed in C++ to interface with a camera over a DVP or USB protocol and save footage to an SD card
+    \end{itemize}
+
+    %----------------------------------------------------------------------------------------
+    %	PROJECTS SECTION
+    %----------------------------------------------------------------------------------------
+    \section{Projects}
+    \subsubsection{Chess AI}{}{Aug 2021 - Jun 2022}
+    \begin{itemize}
+        \item Developed a UCI Chess AI from scratch in Rust using a minimax algorithm with variable depth and time control
+        \item Hosted a systemd service to interact with lichess.com's API, allowing the AI to play against other bots and humans, earning an Elo rating of 1700, making it stronger than 70\% of human players on the website
+    \end{itemize}
+
+    \subsubsection{Servo Controller}{}{Aug 2021 - Jun 2022}
+    \begin{itemize}
+        \item Modified servos to provide an analog feedback signal of their position by accessing the potentiometer within it
+        \item Designed and created an Op-Amp circuit which generates a pulse width modulation (PWM) signal, controlling the position of a servo to match that of another servo by implementing an analog feedback loop to adjust the signal
+    \end{itemize}
+
+    \subsubsection{Automatic Plant Waterer}{}{Aug 2021 - Jun 2022}
+    \begin{itemize}
+        \item Designed, programmed and built an Arduino-controlled 3D-Printed automatic plant watering machine with C++, housing a mint plant and a water supply
+        \item Implemented an Arduino to detect when the soil is too dry and use a peristaltic pump to water the plant when necessary
+    \end{itemize}
+\end{document}
