@@ -9,7 +9,7 @@ show_tab: 1
 # Chess AI
 I created a Chess AI in Rust with no pre-made libraries. Because I am a better coder than I am a chess player, my AI beats me in chess every time.
 
-You can view the [source code](https://github.com/mse63/melsh_bot) on github.
+You can view the [source code](https://github.com/mse63/melsh_bot) on GitHub.
 
 See if you can beat it by challenging it on its [lichess_profile](https://lichess.org/@/melsh_bot).
 
