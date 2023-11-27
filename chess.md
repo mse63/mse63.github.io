@@ -11,7 +11,7 @@ I created a Chess AI in Rust with no pre-made libraries. Because I am a better c
 
 You can view the [source code](https://github.com/mse63/melsh_bot) on GitHub.
 
-See if you can beat it by challenging it on its [lichess_profile](https://lichess.org/@/melsh_bot).
+See if you can beat it by challenging it on its [lichess profile](https://lichess.org/@/melsh_bot).
 
 
 ## Example Game
