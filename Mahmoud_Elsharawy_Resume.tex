@@ -57,6 +57,15 @@
     \end{tabular*}\vspace{-7pt}
 }
 
+\newcommand{\resumeSubheadingTwo}[6]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+      \textit{\small#5} & \textit{\small #6} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
 \newcommand{\resumeSubSubheading}[2]{
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
@@ -88,27 +97,32 @@
 
 \begin{center}
     \textbf{\Huge \scshape Mahmoud Elsharawy} \\ \vspace{1pt}
-    \small \href{mailto:mse63@cornell.edu}{\underline{mse63@cornell.edu}} $|$
-    \href{https://github.com/mse63}{\underline{\smash{https://github.com/mse63}}} $|$
-    \href{https://mse63.github.io}{\underline{\smash{https://mse63.github.io}}}
+    \href{mailto:moud.elsh@gmail.com}{\underline{moud.elsh@gmail.com}} $|$
+    \href{https://github.com/mse63}{\underline{https://github.com/mse63}} $|$
+    \href{https://mse63.github.io}{\underline{https://mse63.github.io}}
 \end{center}
 
 
 %-----------EDUCATION-----------
 \section{Education}
   \resumeSubHeadingListStart
-    \resumeSubheading
-      {Cornell University}{GPA: 3.94}
+    \resumeSubheadingTwo
+      {Cornell University}{GPA: 3.78}
       {Masters of Engineering in Computer Science}{May 2025}
-    \resumeSubheading
-      {Cornell University}{GPA: 3.80}
       {Bachelors of Science in Computer Science \& Electrical and Computer Engineering}{Dec 2024}
   \resumeSubHeadingListEnd
-  \medskip
-  \textbf{Relevant Coursework}{: Compilers, Programming Languages, Computer Architecture, Parallel Architectures, Reinforcement Learning, Microcontollers, Embedded Operating Systems}
+%   \medskip
+%   \textbf{Relevant Coursework}{: Compilers, Programming Languages, Computer Architecture, Parallel Architectures, Reinforcement Learning, Microcontollers, Embedded Operating Systems}
 %-----------EXPERIENCE-----------
 \section{Experience}
   \resumeSubHeadingListStart
+    \resumeSubheading
+      {Apple}{July 2025 - Present}
+      {System Electrical Engineer}{Cupertino, CA}
+      \resumeItemListStart
+        \resumeItem{Integrated schematics for PCBA development, coordinating with Mechanical Engineers, Design for Manufacturing, and PCB Designers to create production-worthy PCBAs}
+        \resumeItem{Characterized and debugged hardware using oscilloscopes and signal analyzers to ensure reliability in production}
+      \resumeItemListEnd
 
     \resumeSubheading
       {Apple}{May 2024 - Aug 2024}
@@ -126,7 +140,6 @@
         \resumeItem{Designed and tested a buck converter power module for use on internal dev boards, removing reliance on a vendor's power modules, preventing future supply chain issues and reducing cost}
         \resumeItem{Designed a PCBA to calibrate the ADC of a SAMD21 microcontroller, and programmed it using C to act as a micro-current load to precisely characterize power components}
         \resumeItem{Created prototype analog and RF circuits for testing and future development}
-        \resumeItem{Coordinated with a Product Design Engineer, DFM, and PCB Designer to design flexible PCBAs for prototypes}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -162,7 +175,7 @@
       \resumeProjectHeading
           {\textbf{RP2040 Audio Communication} $|$ \emph{C++, Embedded Systems, Microcontollers}}{Mar 2024 - April 2024}
           \resumeItemListStart
-            \resumeItem{Developed a 2-way audio communication protocol on RP2040 boards using 8 frequency-based bit encoding, enabling UTF-8 data transmission via sound}
+            \resumeItem{Developed a 2-way audio communication protocol on Raspberry Pi RP2040 boards using 8 frequency-based bit encoding, enabling UTF-8 data transmission via sound}
             \resumeItem{Implemented synchronization logic to detect when the other board starts transmitting and adjust clocks accordingly, while using Direct Digital Synthesis (DDS) for precise audio signal generation}
           \resumeItemListEnd
 
