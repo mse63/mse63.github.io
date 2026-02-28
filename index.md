@@ -1,9 +1,8 @@
 ---
 title: Home
-layout: template
+layout: default
 filename: index
 order: 0
-show_tab: 0
 --- 
 
 <table style="border:none">
@@ -11,10 +10,10 @@ show_tab: 0
         <td style="padding:0px;border:none;width:400px;vertical-align:top"><img src = "Mahmoud.jpg"></td>
         <td style="border:none;vertical-align:top">
             <h2>About Me</h2>
-Welcome to my website! My name is Mahmoud Elsharawy, and I am a Cornell University graduate student in Electrical and Computer Engineering and Computer Science. To get a glimpse of my past and current personal projects, check out the other tabs!
+            <p>My name is Mahmoud Elsharawy, and I am a Cornell University graduate in ECE and CS. I am primarily interested in embedded and low-level software engineering. To get a glimpse of my past and current personal projects, check out the other tabs!</p>
+            <h2>Contact Info</h2>
+            <p>Email: moud.elsh@gmail.com</p>
         </td>
     </tr>
 </table>
 
-## Contact Info
-Email: mse63@cornell.edu

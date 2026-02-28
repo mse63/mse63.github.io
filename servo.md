@@ -1,12 +1,12 @@
 ---
-title: Servo Controller
-layout: template
+title: Analog Servo Controller
+layout: default
 filename: servo
 order: 2
 show_tab: 1
 --- 
 
-# Servo Controller
+# Analog Servo Controller
 
 ## Demo Video
 Here is a video demo of the project as it currently stands:

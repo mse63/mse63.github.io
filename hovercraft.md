@@ -1,9 +1,8 @@
 ---
 title: 3D Printed RC Hovercraft
-layout: template
+layout: default
 filename: hovercraft
 order: 3
-show_tab: 1
 --- 
 
 # 3D Printed RC Hovercraft
