@@ -9,7 +9,7 @@ order: 2024
 
 ## Demo
 A quick demo of this project is available here:
-<iframe width="640" height="385" src="https://www.youtube.com/embed/Fsx4Ek3jXTU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/Fsx4Ek3jXTU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Technical Details
 
