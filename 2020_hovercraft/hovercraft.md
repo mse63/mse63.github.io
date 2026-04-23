@@ -9,7 +9,7 @@ order: 2020
 
 ## Demo Video
 Here is a video demo of the completed project:
-<iframe width="640" height="385" src="https://www.youtube.com/embed/mySd611Zj0Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/mySd611Zj0Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Design
 I began by making my own impellers. I wanted to create them out of PLA,as it is the easiest and most common 3D printing material. Unfortunately, it has a relatively low glass transition temperature of about 60°C, This led to an issue where the motor would heat up and melt the PLA impeller, which clearly wasn't good for either of them.
