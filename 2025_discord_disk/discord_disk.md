@@ -13,7 +13,7 @@ This project is inspired by suckerpinch's video: [Harder Drives](https://www.you
 
 ## Demo
 A quick demo of this project is available here:
-<iframe width="640" height="385" src="https://www.youtube.com/embed/nOIQ9eKzWVw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/nOIQ9eKzWVw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 ## Technical Details
